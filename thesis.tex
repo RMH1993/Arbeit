@@ -1,0 +1,50 @@
+% -*- coding: utf-8 -*-
+\documentclass{scrbook} % Entspricht den Typografieregeln eines Buches
+\usepackage{wbh-thesis} % Laden der Vorlage
+
+
+\title{Konzeption und Entwicklung einer Versionierungssoftware zur besseren Verwaltung von Macro- und SPS-Programmen als Bestandteil der Firmware von Präzisionsmessmaschinen}
+\Autor[m]{Maik Ledwina} % Option entspricht dem Genus für Autor/in bzw. 
+                            % Studierende/r:  m = Autor bzw. Studierender
+                            %                 f = Autorin bzw. Studierende
+\Fachbereich{INF} % Entspricht einer der folgenden Optionen für den Fachbereich:
+                  % * ING = Ingenieurwissenschaften
+                  % * INF = Informatik
+                  % * WRT = Wirtschaftsingeniuerwesen und Technologiemanagement
+\Betreuung[m]{Prof. Dr. Freytag} % Option entspricht dem Genus für 
+                                    % Betreuer/in:  m = Betreuer
+                                    %               f = Betreuerin
+\Matrikelnummer{880767}
+\Abgabetermin{2.\,Juli~2016}
+\Anschrift{Ringstraße 30}{76437 Rastatt}
+
+\begin{document}
+  \maketitle          % Setzt die Titelseite
+  \frontmatter        % Eigenschaften für den Vorspann setzen
+  \Abstract{abstract} % Zusammenfassung (Abstract) aus Datei
+  \tableofcontents    % Setzt das Inhaltsverzeichnis
+  \mainmatter         % Eigenschaften für den Hauptteil setzen
+
+  % Der eigentliche Inhalt folgt an dieser Stelle, z.B.:
+  
+  \include{kap_einleitung}
+  
+  \include{Abk_Verz}
+  
+  \include{bez_beg}
+  
+  \include{theoretischer_Teil}
+  	  	\include{Versionskontrolle}
+  	  	\include{Grund_Einsatzgebiet}
+  	  	\include{Ind_Fert}
+  % \include{kap_analyse}
+  % \include{kap_entwurf}
+  % \include{kap_realisierung}
+  % \include{kap_resuemee}
+
+%  \appendix                       % Leitet den Nachspann ein
+%  \listoftables                   % Setzt das Tabellenverzeichnis
+%  \listoffigures                  % Setzt das Abbildungsverzeichnis
+%  \printbibliography              % Setzt das Literaturverzeichnis
+  \printEidesstattlicheErklaerung % Setzt die eidesstattlichen Erklärung
+\end{document}

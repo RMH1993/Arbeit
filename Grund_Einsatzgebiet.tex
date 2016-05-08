@@ -1,0 +1,36 @@
+\section{Grundlagen zum untersuchten Einsatzgebiet}
+\subsection{Päzisionsmessmaschinen}
+Strenggenommen handelt es sich dabei eigentlich um Präzisionsmessgeräte in der Umgangssprache hat sich jedoch die Bezeichnung als Maschine durchgesetzt und wird fast einheitlich von allen Herstellern verwendet. Zum Einsatz kommen Präzisionsmessmaschinen überall dort wo an Produkte ein hohes Maß an mechanischer Qualität gefordert ist. So werden mit Präzisionsmessmaschinen alle möglichen gefertigten Bauteile, von kleine Schrauben und Zahnrädern bis hin zu Kompletten LKW, Schiffsmotoren oder Teile von Windkraftanlagen vermessen. Üblicherweise werden Präzisionsmessmaschinen in die Gruppen Portal-, Brücken- und Ständermessmaschinen unterteilt. Die einzelnen Achsen werden wahlweise Rollen- oder, wenn größere Präzision gefragt ist, Luftgelagert. Der Typische Messbereich solcher Maschinen erstreckt sich im Bereich der
+\begin{itemize}
+\item Zahnradmesstechnik \\
+bei einem Zylindrischen Messbereich mit Durchmessern von \o 280mm bis \o 4000mm
+
+und
+\item Koordinatenmesstechnik \\ 
+bei einem Quaderförmigen Messbereich von 500mm x 500mm x 400mm bis 4000mm x 16000mm x 3000mm in Portal- und Brückenbauweise und 1000mm x 600mm x 1000mm bis 56000mm x 3600mm x 3600mm in Ständerbauweise.
+\end{itemize}
+
+Von Präzisionsmessmaschinen spricht man, da die Genauigkeit mit der die Geräte messen können bei einem Maschinengrundfehler von 1\textmu{  } und teilweise weniger beginnen. 
+
+% Teil über die Controller
+
+\subsection{Controller}
+Als Controller wird im Allgemeinen eine Steuerung bezeichnet, welche in der Lage ist, durch integrierte oder dazugehörende Firmware oder Software, eine Maschine zu steuern und zu regeln.
+Im Falle des Untersuchungsgegenstand sind ein hohes Maß an Genauigkeit, Zuverlässigkeit und Qualität gefordert. Messmaschinen müssen, Positionen auf Zehntel Mikrometer halten, verfahren und positionieren können. Jede Präzisionsmessmaschine hat zusätzlich zur hohen Fertigungsgenauigkeit noch ein CAA Feld, welches die mechanischen Restfehler der Maschine enthält und entsprechend vom Controller ausgeglichen werden muss. An allen Achsen der Messmaschine befinden sich Positionsmesssysteme und an den Motoren der Achsen zusätzliche Tachometer. An jeder Messmaschine werden Messköpfe zur Aufnahme von Tastpunkten angebracht. Aufgabe des Controllers ist es diese Komponenten zusammen zu betreiben, synchronisieren und zu überwachen.
+
+% Teil über SPS Programme
+
+\subsection{SPS-Programme}
+Speicherprogrammierbare Steuerungen finden in der Steuerung von in der Industrie betriebenen Fertigungsmaschinen eine weite Verbreitung, sie ermöglichen es viele Sensoren zu überwachen und die Maschine entsprechend zu steuern. Im Minimalfall enthält eine SPS-Steuerung Eingänge, Ausgänge, einen Mikrocontroller und Speicher. Für die Steuerungen werden Programme geschrieben und integriert, welche die über die Eingänge ankommenden Informationen verarbeiten und entsprechende Aktionen an die Ausgänge weitergeben.
+Im Untersuchungsgegenstand, ist eine Software simulierte SPS integriert und dazugehörend eine Vielzahl von SPS-Programmen die den Controller in der Verarbeitung verschiedenster Sensoren unterstützen und die Ergebnisse und Informationen an den Controller weiter geben. Hierdurch ist es möglich, den Controller die Maschinen zu erweitern und um die beim Kunden geforderten Erweiterungen anzupassen. Dabei kann es sich um Erweiterungen wie die Überwachung einer automatischen Bestückung, Überwachung zusätzlicher Sicherheitseinrichtungen in oder um die Maschinen oder die Ansteuerung zusätzlicher Komponenten für die fertigungsintegrierte Werkstückprüfung handeln.
+
+
+
+
+% Teil über die Grundlagen von Macros  
+
+\subsection{Makros}
+Zur Software des Controller im Untersuchungsgegenstand gehören eine Vielzahl von Makros, welche als Erweiterungen bzw. zusätzliche Optionen zur Software des Controller gehören und welche mit in die Versionsverwaltung integriert werden müssen. Die Makros sind vom Controller ausführbare Dateien, welche Funktionen die im Controller enthalten sind zu bestimmten Abläufen zusammenfassen oder auch weitere Funktionen enthalten um den Funktionsumfang des Controllers zu erweitern.
+
+
+

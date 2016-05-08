@@ -1,0 +1,43 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.4 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nty}{nty}
+    \entry{AMin.sieben.T}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=ff1eeb50989bbc1aa29ba0c03ca0e15f}{Niebisch}{N\bibinitperiod}{Thomas}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=ff1eeb50989bbc1aa29ba0c03ca0e15f}{Niebisch}{N\bibinitperiod}{Thomas}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{ff1eeb50989bbc1aa29ba0c03ca0e15f}
+      \strng{fullhash}{ff1eeb50989bbc1aa29ba0c03ca0e15f}
+      \field{sortinit}{N}
+      \field{sortinithash}{a52ecf374d1aa02cdea5f29be4dad56c}
+      \field{labeltitle}{Anforderungsmanagement in sieben Tagen}
+      \field{title}{Anforderungsmanagement in sieben Tagen}
+      \field{year}{2013}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

@@ -1968,7 +1968,16 @@
     <bcf:datasource type="file" datatype="bibtex">quellen.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">AMin.sieben.T</bcf:citekey>
+    <bcf:citekey order="1">100minAM</bcf:citekey>
+    <bcf:citekey order="2">AMin.sieben.T</bcf:citekey>
+    <bcf:citekey order="3">100minAM</bcf:citekey>
+    <bcf:citekey order="4">AMin.sieben.T</bcf:citekey>
+    <bcf:citekey order="5">100minAM</bcf:citekey>
+    <bcf:citekey order="6">KPAvMdAM</bcf:citekey>
+    <bcf:citekey order="7">AM</bcf:citekey>
+    <bcf:citekey order="8">100minAM</bcf:citekey>
+    <bcf:citekey order="9">AMin.sieben.T</bcf:citekey>
+    <bcf:citekey order="10">AM</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty" type="entry" sortscheme="nty">
   <bcf:sorting>

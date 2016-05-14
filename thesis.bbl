@@ -19,6 +19,26 @@
 
 \refsection{0}
   \sortlist{nty}{nty}
+    \entry{100minAM}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=c0620b436df05dbccd90b93e2af3ac1d}{Grande}{G\bibinitperiod}{Marcus}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=c0620b436df05dbccd90b93e2af3ac1d}{Grande}{G\bibinitperiod}{Marcus}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Vieweg}%
+      }
+      \strng{namehash}{c0620b436df05dbccd90b93e2af3ac1d}
+      \strng{fullhash}{c0620b436df05dbccd90b93e2af3ac1d}
+      \field{sortinit}{G}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
+      \field{labeltitle}{100 Minuten für Anforderungsmanagement : Kompaktes Wissen nicht nur für Projektleiter und Entwickler}
+      \field{edition}{2., aktualisierte Aufl. 2014}
+      \field{title}{100 Minuten für Anforderungsmanagement : Kompaktes Wissen nicht nur für Projektleiter und Entwickler}
+      \field{year}{2014}
+      \keyw{Requirements engineering ; Computer science / Software engineering / Computer Science}
+    \endentry
     \entry{AMin.sieben.T}{book}{}
       \name{labelname}{1}{}{%
         {{hash=ff1eeb50989bbc1aa29ba0c03ca0e15f}{Niebisch}{N\bibinitperiod}{Thomas}{T\bibinitperiod}{}{}{}{}}%
@@ -36,6 +56,61 @@
       \field{labeltitle}{Anforderungsmanagement in sieben Tagen}
       \field{title}{Anforderungsmanagement in sieben Tagen}
       \field{year}{2013}
+    \endentry
+    \entry{AM}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=950784349377e44e9fe26b39bea11d39}{Versteegen}{V\bibinitperiod}{Gerhard\bibnamedelima [Hrsg.]}{G\bibinitperiod\bibinitdelim [\bibinitperiod}{}{}{}{}}%
+        {{hash=acace50a61f4a4fc3f5e616b84434c6b}{Heßeler}{H\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=950784349377e44e9fe26b39bea11d39}{Versteegen}{V\bibinitperiod}{Gerhard\bibnamedelima [Hrsg.]}{G\bibinitperiod\bibinitdelim [\bibinitperiod}{}{}{}{}}%
+        {{hash=acace50a61f4a4fc3f5e616b84434c6b}{Heßeler}{H\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{138197badaa67d4909322d222e308183}
+      \strng{fullhash}{138197badaa67d4909322d222e308183}
+      \field{sortinit}{V}
+      \field{sortinithash}{63562d1af2cd68fb37e2e14e0c6d5c96}
+      \field{labeltitle}{Anforderungsmanagement : formale Prozesse, Praxiserfahrungen, Einführungsstrategien und Toolauswahl; [mit Praxisbeiträgen von BearingPoint (KPMG), HOOD Group und Telelogic; mit 11 Tab.]}
+      \field{series}{Xpert.press}
+      \field{title}{Anforderungsmanagement : formale Prozesse, Praxiserfahrungen, Einführungsstrategien und Toolauswahl; [mit Praxisbeiträgen von BearingPoint (KPMG), HOOD Group und Telelogic; mit 11 Tab.]}
+      \field{year}{2004}
+    \endentry
+    \entry{KPAvMdAM}{report}{}
+      \name{labelname}{3}{}{%
+        {{hash=e5af7316cc40243565849f8310518c45}{Zehnter}{Z\bibinitperiod}{Christina}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=23c3b6c26795ddb80a657f473246656b}{Burger}{B\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=bb0ab72ff49bf3abe922cdca7a5cd69a}{Ovtcharova}{O\bibinitperiod}{Jivka}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=e5af7316cc40243565849f8310518c45}{Zehnter}{Z\bibinitperiod}{Christina}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=23c3b6c26795ddb80a657f473246656b}{Burger}{B\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=bb0ab72ff49bf3abe922cdca7a5cd69a}{Ovtcharova}{O\bibinitperiod}{Jivka}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Karlsruhe}%
+      }
+      \list{publisher}{1}{%
+        {KIT Scientific Publishing}%
+      }
+      \strng{namehash}{9574ae93d520314b3f6641d5cf29f2fd}
+      \strng{fullhash}{9574ae93d520314b3f6641d5cf29f2fd}
+      \field{sortinit}{Z}
+      \field{sortinithash}{9cca09897f0dfd9ed260e065f6d82cd6}
+      \field{labeltitle}{Key-Performance-Analyse von Methoden des Anforderungsmanagements}
+      \field{series}{KIT scientific reports ; 7620}
+      \field{title}{Key-Performance-Analyse von Methoden des Anforderungsmanagements}
+      \field{type}{techreport}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://digbib.ubka.uni-karlsruhe.de/volltexte/1000028693
+      \endverb
+      \keyw{Online-Publikation}
     \endentry
   \endsortlist
 \endrefsection

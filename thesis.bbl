@@ -57,6 +57,33 @@
       \field{title}{Anforderungsmanagement in sieben Tagen}
       \field{year}{2013}
     \endentry
+    \entry{REuM}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=61d4d17b2d880e99d0c77f6e2bce7f50}{Rupp}{R\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=61d4d17b2d880e99d0c77f6e2bce7f50}{Rupp}{R\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {SOPHIST-Gesellschaft für Innovatives Software-Engineering (Nürnberg)}%
+      }
+      \list{location}{1}{%
+        {München}%
+      }
+      \list{publisher}{1}{%
+        {Hanser}%
+      }
+      \strng{namehash}{61d4d17b2d880e99d0c77f6e2bce7f50}
+      \strng{fullhash}{61d4d17b2d880e99d0c77f6e2bce7f50}
+      \field{sortinit}{R}
+      \field{sortinithash}{ff5a3533ecf9d5a03ff60b1e1389b63d}
+      \field{labeltitle}{Requirements-Engineering und -Management : aus der Praxis von klassisch bis agil}
+      \field{edition}{6., aktualisierte und erw. Aufl.}
+      \field{isbn}{978-3-446-43893-4}
+      \field{title}{Requirements-Engineering und -Management : aus der Praxis von klassisch bis agil}
+      \field{year}{2014}
+      \keyw{Requirements engineering}
+    \endentry
     \entry{AM}{book}{}
       \name{labelname}{2}{}{%
         {{hash=950784349377e44e9fe26b39bea11d39}{Versteegen}{V\bibinitperiod}{Gerhard\bibnamedelima [Hrsg.]}{G\bibinitperiod\bibinitdelim [\bibinitperiod}{}{}{}{}}%

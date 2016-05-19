@@ -44,6 +44,24 @@ Die beiden aktuell am verbreitetsten Systeme sind Subversion und Git. Als Hauptg
 
 \subsection{Subversion}
 
+\subsubsection{Geschichtliches zu Subversion}
+
+Subversion wurde als Nachfolger für CVS, das bis dahin am weites verbreitetste Versionskontrollsystem, nicht zuletzt wegen seiner freien Verfügbarkeit und entsprechendem Einsatz in Open-Source-Projekten, entwickelt.
+Im Jahr 2000 war es die amerikanische Softwarefirma CollabNet, welche bis dahin selbst CVS im Einsatz hatte. CVS hatte jedoch einige Schwachstellen, was CollabNet dazu veranlasste Kontakt zu Karl Fogel aufzunehmen und ihn zur Mitarbeit an einem neue System zu bewegen. Karl Fogel selbst hatte nicht nur ein Buch\autocite{OPSmCVS} über CVS geschrieben sondern mit seinem Freund Jim Blandy hatte er auch eine CSV Beratungs Firma gegründet. Diese war zwar bereits verkauft doch beide arbeiteten noch immer mit CVS und hatten ebenfalls schon über einen Nachfolger gesprochen und sowohl einen Namen dafür wie auch den Entwurf für das Datenablagesystem, es hieß Subversion. Im Mai 2000 war Karl Fogel angestellter bei CollabNet, zusammen mit einigen anderen Entwicklern starteten Sie mit der Entwicklung von Subversion. Es fand sich schnell Unterstützung, da viele Entwickler die gleichen Probleme mit 
+CVS hatten und eine alternative suchten.
+
+Die ersten 14 Monate lang wurde die Softwareentwicklung mit CVS verwaltet, danach waren sie mit der Entwicklung von Subversion soweit fortgeschritten, dass die Versionsverwaltung der Weiterentwicklung von Subversion auf Subversion selbst verwaltet werden konnte. 
+
+Subversion ist kein revolutionär neues Versionsverwaltungssystem sondern vielmehr eine Evolutionäre Weiterentwicklung von CVS, was auch den Umstieg von CVS Usern zu Subversion erleichtern sollte.
+
+Obwohl Subversion ein Open-Source-Projekt ist, finanziert CollabNet noch immer einen Großteil dessen Entwicklung und auch einige Vollzeitentwickler des Systems und hat 2009 auch alles daran gesetzt, Subversion in die Familie der Apache Software Foundation (ASF) zu integrieren. Dies gelang im Jahr 2010 auch und aus Subversion wurde Apache Subversion.
+
+\subsubsection{Funktionsweise}
+Subversion gehört zu den zentralen Versionsverwaltungssystemen. Das heißt es liegt ein Repository auf einem zentralen Server und auf dieses können der oder die Entwickler zugreifen.
+
+Auf dem Server werden die Daten des Repository entweder in einer Berkeley Datenbank oder dem Dateisystem FSFS (FileSystem-FileSystem). Dabei ist die Berkeley DB Data Store die Speicherlösung, mit der man seit beginn der Entwicklung von Subversion arbeitet. Es wurde seinerzeit ausgewählt, da es unter anderem ein stabiles und zuverlässiges System war, welches ebenfalls eine Open-Source-Lizenz hat und daher auch noch kostenlos war. Das FSFS Dateisystem wurde erst später mit der Version 1.1 eingeführt. Seit der Version 1.8 wird die Berkeley DB als veraltet betrachtet und FSFS als alleiniges Speichersystem angenommen. 
+
+Verwendet man Subversion alleine auf einem lokalen Rechner, so ist keine Subversion Server notwendig. Sollen jedoch mehrere Entwickler über das Netzwerk auf das Ropository zugriff haben, kommt man um einen Server nicht herum. Dabei sind auch hier wieder mehrere Möglichkeiten gegeben. 
 
 \subsection{Git}
 

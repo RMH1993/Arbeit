@@ -56,12 +56,35 @@ Subversion ist kein revolutionär neues Versionsverwaltungssystem sondern vielme
 
 Obwohl Subversion ein Open-Source-Projekt ist, finanziert CollabNet noch immer einen Großteil dessen Entwicklung und auch einige Vollzeitentwickler des Systems und hat 2009 auch alles daran gesetzt, Subversion in die Familie der Apache Software Foundation (ASF) zu integrieren. Dies gelang im Jahr 2010 auch und aus Subversion wurde Apache Subversion.
 
-\subsubsection{Funktionsweise}
+\subsubsection{Aufbau}
 Subversion gehört zu den zentralen Versionsverwaltungssystemen. Das heißt es liegt ein Repository auf einem zentralen Server und auf dieses können der oder die Entwickler zugreifen.
 
 Auf dem Server werden die Daten des Repository entweder in einer Berkeley Datenbank oder dem Dateisystem FSFS (FileSystem-FileSystem). Dabei ist die Berkeley DB Data Store die Speicherlösung, mit der man seit beginn der Entwicklung von Subversion arbeitet. Es wurde seinerzeit ausgewählt, da es unter anderem ein stabiles und zuverlässiges System war, welches ebenfalls eine Open-Source-Lizenz hat und daher auch noch kostenlos war. Das FSFS Dateisystem wurde erst später mit der Version 1.1 eingeführt. Seit der Version 1.8 wird die Berkeley DB als veraltet betrachtet und FSFS als alleiniges Speichersystem angenommen. 
 
-Verwendet man Subversion alleine auf einem lokalen Rechner, so ist keine Subversion Server notwendig. Sollen jedoch mehrere Entwickler über das Netzwerk auf das Ropository zugriff haben, kommt man um einen Server nicht herum. Dabei sind auch hier wieder mehrere Möglichkeiten gegeben. 
+Verwendet man Subversion alleine auf einem lokalen Rechner, so ist keine Subversion Server notwendig. Sollen jedoch mehrere Entwickler über das Netzwerk auf das Repository zugriff haben, kommt man um einen Server nicht herum. Dabei sind auch hier wieder mehrere Möglichkeiten gegeben. Zum einen lässt sich auf dem Server ein Apache HTTP-Server betreiben und dann mittels HTTP Protokoll über das Netzwerk auf das Repository zugreifen. Zum anderen gibt es einen Subversion eigenen Server, den svnserve und ein dafür entwickeltest SVN Protokoll. 
+
+Über die Kommandozeile oder verschiedene Client Anwendungen, lässt sich so mit dem Versionierungssystem arbeiten. 
+
+\subsubsection{Die Arbeit mit Subversion}
+
+Die einfachste Erklärung zur Arbeit mit Subversion ist, der Entwickler der mit dem Projekt arbeiten möchte, erzeugt sich eine lokale Kopie, die working copy genannt wird vom, auf dem Server liegenden Stammprojekt, welches als Trunk bezeichnet wird.Der Kopiervorgang wird als Checkout bezeichnet. Mit der lokalen Kopie arbeitet der Entwickler, hat er eine Änderungen oder Erweiterung fertig so führt er einen commit aus, bei dem alle geänderten Dateien in das Repository übertragen werden und dort für alle anderen zugänglich sind. 
+
+So einfach ist es in der Realität kaum und daher existieren noch viele weitere wichtige Funktionen, welche für die tägliche Arbeit mit Subversion benötigt werden.
+
+\begin{itemize}
+\itemsep-8pt
+\item checkout
+\item repository
+\item head
+\item branch
+\item merge
+\item tag
+\item commit
+\item update
+\end{itemize}
+
+Subversion wurde so entwickelt, dass damit mehrere Entwickler am gleichen Projekt arbeiten können. Wenn natürlich mehrere Entwickler an einem Projekt arbeiten, werden auch von mehreren die gleichen Dateien bearbeitet. Da jeder mit seiner lokalen Kopie arbeitet, stellt dies auch kein Problem dar. Werden aber nun die Änderungen von jedem Entwickler zurück gespielt, so haben die Dateien unterschiedliche stände. Haben alle Entwickler an unterschiedlichen Stellen einer Datei Änderungen durchgeführt, so führt der Server die Änderungen zusammen. Dieser Vorgang nennt sich mergen. Wurden die Dateien jedoch an gleicher Stelle geändert, so entsteht ein Konflikt, der Commit wird mit einer Fehlermeldung abgebrochen.
+Der Entwickler muss nun schauen, was die Unterschiede beider Versionen ist und diesen Konflikt beheben, es kann erforderlich sein, dass er sich mit dem anderen Entwickler in Verbindung setzt, der die Datei vor Ihm bearbeitet hat.
 
 \subsection{Git}
 

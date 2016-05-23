@@ -1,10 +1,34 @@
 \chapter*{Bezeichnungen und Begrifflichkeiten}
+\begin{center}
 
-\begin{tabular}{lp{11cm}}
-Repository  & Text \\
-Mergen & text \\
+
+\begin{longtable}{lp{11cm}}
+Repository  & Als Repository wird in der Versionsverwaltung, der Ablageort bezeichnet, an welchem die durch das System versionierten Projekte gespeichert werden. Ein Repository kann dabei mehrere Projekte enthalten. \\
+
+Head & Als Head wird die aktuellste Version im Trunk Zweig des Repository bezeichnet, die im Normalfall mittels Checkout oder update in die lokale Arbeitskopie überführt wird) \\
+
+checkout & Der Kopiervorgang zum erstellen einer lokalen Arbeitskopie, wird als checkout bezeichnet.  \\
+
+branch & Ein Branch ist ein Zweig der parallel zum Trunk Zweig geführt und gepflegt wird. Dafür kann es verschiedene Gründe geben, evtl. soll die Software für unterschiedliche Betriebssysteme verfügbar sein und hat dabei einen großen Teil an identischen Dateien und einige Betriebssystem spezifische oder weil eine grundlegende Überarbeitung stattfinden soll, welche die parallel weiterlaufende Entwicklung nicht beeinflussen soll. \\
+
+Mergen & Damit wird das zusammenführen zweier gleicher Dateien mit unterschiedlichen Ständen gemeint. Der Vorgang kann automatisch erfolgen, wenn die Dateien an unterschiedlichen Stellen verändert wurden. Wurden beide an gleicher Stelle geändert, so kommt es zu einem Konflikt der Vorgang wird abgebrochen und eine Fehlermeldung ausgegeben, wo es zu einem Konflikt in der Zusammenführung kam. So dass der Entwickler den Konflikt von Hand beseitigen kann. \\
+
+Revision & Jede Änderung, die in das Repository commited wird, erzeugt eine neue Revision. Dabei ist es unerheblich, ob diese Datei in den Trunk, einen Branch oder in ein anderes Projekt im gleichen Repository übertragen wird. Bei Subversion gibt es keine Revisionsnummern für die einzelnen Dateien sondern nur für das Repository im Gesamten. \\
+
+Tag & Ein Tag wird dazu verwendet um bestimmte Revisionen des Repository mit einem speziellen Namen zu versehen. Diese Funktion kann man zum Beispiel dafür verwenden, wenn zum Ausliefern eines Produktes immer eine bestimmte Version erzeugt werden soll, bei dem der Namen nicht einfach nur eine Nummer einer Revision sein soll sondern z. B. einen "sprechenden" Namen erhalten soll wie Version 1.0 oder ähnliches. \\
+
+commit & Bei einem commit, werden lokale Änderungen an das Repository übertragen und erzeugen dort eine neue Revision. Der Entwickler, der den commit ausführt muss noch eine Commit Message eingeben, die die durchgeführten Änderungen dokumentieren sollen. \\
+
+Trunk & Als Trunk wird der Hauptentwicklungszwei eines Projekts bezeichnet, welches in einem Repository verwaltet wird. \\
+
+Update & Mittels dem Befehl Update, kann man sich seine working copy aktuell halten. Der Befehl vergleicht die lokale Kopie mit dem Head im Repository und führt bei den veralteten Dateien ein update durch. Sollte eine Datei auf dem Server erneuert worden sein, die auf der lokalen Kopie auch verändert wurde, so versucht das System die beiden Dateien zusammen zu führen. \\
+
 Push & text \\
-Klonen & text \\
-Open-Source & Text \\
-Stakeholder & Als Stakeholder bezeichnet man die Personen oder Personenkreise, die beim Erheben von Anforderungen ein direktes oder indirektes Interesse an der Lösung haben. 
-\end{tabular}
+
+Klonen & tex) \\
+
+Open-Source & Tex) \\
+
+Stakeholder & Als Stakeholder bezeichnet man die Personen oder Personenkreise, die beim Erheben von Anforderungen ein direktes oder indirektes Interesse an der Lösung haben.  
+\end{longtable}
+\end{center}

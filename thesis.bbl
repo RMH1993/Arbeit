@@ -19,6 +19,88 @@
 
 \refsection{0}
   \sortlist{nty}{nty}
+    \entry{PGit}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=8f4ee0c97dee95179ce1e79e846dd298}{Chacon}{C\bibinitperiod}{Scott}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8f4ee0c97dee95179ce1e79e846dd298}{Chacon}{C\bibinitperiod}{Scott}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=50418136ff59fed99760e32ba5613c51}{Straub}{S\bibinitperiod}{Ben}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berkeley, CA}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{8f4ee0c97dee95179ce1e79e846dd298}
+      \strng{fullhash}{8f4ee0c97dee95179ce1e79e846dd298}
+      \field{sortinit}{C}
+      \field{sortinithash}{dd0e4ddd17488a6ebf12cd6de2f2c237}
+      \field{labeltitle}{Pro Git}
+      \field{edition}{Second Edition}
+      \field{isbn}{978-148-420-076-6}
+      \field{series}{SpringerLink : Bücher}
+      \field{title}{Pro Git}
+      \field{year}{2014}
+      \keyw{; Computer science / Computer Science ; Git <Software>}
+    \endentry
+    \entry{VkmSVN}{book}{}
+      \name{labelname}{3}{}{%
+        {{hash=6a0c3282b480240bae575880293ac50b}{Collins-Sussman}{C\bibinithyphendelim S\bibinitperiod}{Ben}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=d42a4084a970b70bf911b6e4c4fc481c}{Fitzpatrick}{F\bibinitperiod}{Brian\bibnamedelima W.}{B\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=52f25ad34c7c7d27689bd28a1133007b}{Pilato}{P\bibinitperiod}{C.\bibnamedelimi Michael}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=6a0c3282b480240bae575880293ac50b}{Collins-Sussman}{C\bibinithyphendelim S\bibinitperiod}{Ben}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=d42a4084a970b70bf911b6e4c4fc481c}{Fitzpatrick}{F\bibinitperiod}{Brian\bibnamedelima W.}{B\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=52f25ad34c7c7d27689bd28a1133007b}{Pilato}{P\bibinitperiod}{C.\bibnamedelimi Michael}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Beijing}%
+      }
+      \list{publisher}{1}{%
+        {OReilly}%
+      }
+      \strng{namehash}{33c8b17be0d300dbd37eb61dfd84e9c6}
+      \strng{fullhash}{33c8b17be0d300dbd37eb61dfd84e9c6}
+      \field{sortinit}{C}
+      \field{sortinithash}{dd0e4ddd17488a6ebf12cd6de2f2c237}
+      \field{labeltitle}{Versionskontrolle mit Subversion : Software-Projekte intelligent koordinieren}
+      \field{edition}{2. Aufl.}
+      \field{isbn}{3-89721-460-1; 978-3-89721-460-6}
+      \field{title}{Versionskontrolle mit Subversion : Software-Projekte intelligent koordinieren}
+      \field{year}{2006}
+      \keyw{Subversion <Programm>}
+    \endentry
+    \entry{OPSmCVS}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=d592edb76c323ea9fc040b7c07a976f8}{Fogel}{F\bibinitperiod}{Karl}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=52b5fc5f9688e5dad85f77540cf97b88}{Bar}{B\bibinitperiod}{Moshe}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=d592edb76c323ea9fc040b7c07a976f8}{Fogel}{F\bibinitperiod}{Karl}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=52b5fc5f9688e5dad85f77540cf97b88}{Bar}{B\bibinitperiod}{Moshe}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Bonn}%
+      }
+      \list{publisher}{1}{%
+        {MITP-Verl.}%
+      }
+      \strng{namehash}{0750202e03a9a8460482a9f81c5a5c9f}
+      \strng{fullhash}{0750202e03a9a8460482a9f81c5a5c9f}
+      \field{sortinit}{F}
+      \field{sortinithash}{9661cce5f16ac30b6b0c804d4583ed99}
+      \field{labeltitle}{Open Source-Projekte mit CVS : [verteilte Softwareentwicklung mit dem Concurrent Versions System; Grundprinzipien und Anwendung verteilter Softwareentwicklung; CVS-Server installieren und verwalten; jetzt mit umfassender Befehlsreferenz und praktischer Schnellreferenz]}
+      \field{edition}{2., erw. u. überarb. Aufl.}
+      \field{isbn}{3-8266-0816-X}
+      \field{title}{Open Source-Projekte mit CVS : [verteilte Softwareentwicklung mit dem Concurrent Versions System; Grundprinzipien und Anwendung verteilter Softwareentwicklung; CVS-Server installieren und verwalten; jetzt mit umfassender Befehlsreferenz und praktischer Schnellreferenz]}
+      \field{year}{2002}
+      \keyw{Open Source / Softwareentwicklung / CVS <Programm> ; CVS <Programm> / Befehlsvorrat / Verzeichnis}
+    \endentry
     \entry{100minAM}{book}{}
       \name{labelname}{1}{}{%
         {{hash=c0620b436df05dbccd90b93e2af3ac1d}{Grande}{G\bibinitperiod}{Marcus}{M\bibinitperiod}{}{}{}{}}%
@@ -38,6 +120,32 @@
       \field{title}{100 Minuten für Anforderungsmanagement : Kompaktes Wissen nicht nur für Projektleiter und Entwickler}
       \field{year}{2014}
       \keyw{Requirements engineering ; Computer science / Software engineering / Computer Science}
+    \endentry
+    \entry{Git}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=e0edd56e67a051a8db8a3c3e85bc4d53}{Haenel}{H\bibinitperiod}{Valentin}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=4a4a8dfbbb4f990b1e68ece5c633dfcc}{Plenz}{P\bibinitperiod}{Julius}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=e0edd56e67a051a8db8a3c3e85bc4d53}{Haenel}{H\bibinitperiod}{Valentin}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=4a4a8dfbbb4f990b1e68ece5c633dfcc}{Plenz}{P\bibinitperiod}{Julius}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {München}%
+      }
+      \list{publisher}{1}{%
+        {open source PRESS}%
+      }
+      \strng{namehash}{e2c828f5092fa5cec287efeb931b339c}
+      \strng{fullhash}{e2c828f5092fa5cec287efeb931b339c}
+      \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
+      \field{labeltitle}{Git : verteilte Versionsverwaltung für Code und Dokumente}
+      \field{edition}{2. Aufl.}
+      \field{isbn}{978-3-95539-119-5}
+      \field{title}{Git : verteilte Versionsverwaltung für Code und Dokumente}
+      \field{year}{2006}
+      \keyw{Git <Programm>}
     \endentry
     \entry{AMin.sieben.T}{book}{}
       \name{labelname}{1}{}{%

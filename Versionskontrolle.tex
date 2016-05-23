@@ -1,3 +1,4 @@
+\chapter{theoretischer Teil}
 \section{Versionsverwaltung}
 \subsection{Anfänge der Versionsverwaltung}
 Die Anfänge der Versionsverwaltung reichen bis in die 70er Jahre des vergangenen Jahrhunderts zurück. Anfang der 70er wurde bei dem amerikanischen Telekommunikationsunternehmen AT \& T eines der ersten Versionsmanagement System entwickelt, Source Code Control System. Es war für die Verwaltung einzelner Dateien ausgelegt, die nur von einem Entwickler bearbeitet wurden. Ganze Projekte und Entwicklung im Team konnte mit diesem System nicht verwaltet werden. 
@@ -56,7 +57,7 @@ Subversion ist kein revolutionär neues Versionsverwaltungssystem sondern vielme
 
 Obwohl Subversion ein Open-Source-Projekt ist, finanziert CollabNet noch immer einen Großteil dessen Entwicklung und auch einige Vollzeitentwickler des Systems und hat 2009 auch alles daran gesetzt, Subversion in die Familie der Apache Software Foundation (ASF) zu integrieren. Dies gelang im Jahr 2010 auch und aus Subversion wurde Apache Subversion.
 
-\subsubsection{Aufbau}
+\subsubsection{Aufbau von Subversion}
 Subversion gehört zu den zentralen Versionsverwaltungssystemen. Das heißt es liegt ein Repository auf einem zentralen Server und auf dieses können der oder die Entwickler zugreifen.
 
 Auf dem Server werden die Daten des Repository entweder in einer Berkeley Datenbank oder dem Dateisystem FSFS (FileSystem-FileSystem). Dabei ist die Berkeley DB Data Store die Speicherlösung, mit der man seit beginn der Entwicklung von Subversion arbeitet. Es wurde seinerzeit ausgewählt, da es unter anderem ein stabiles und zuverlässiges System war, welches ebenfalls eine Open-Source-Lizenz hat und daher auch noch kostenlos war. Das FSFS Dateisystem wurde erst später mit der Version 1.1 eingeführt. Seit der Version 1.8 wird die Berkeley DB als veraltet betrachtet und FSFS als alleiniges Speichersystem angenommen. 
@@ -78,13 +79,45 @@ So einfach ist es in der Realität kaum und daher existieren noch viele weitere 
 \item head
 \item branch
 \item merge
+\item revision
 \item tag
 \item commit
 \item update
+\item trunk
 \end{itemize}
 
-Subversion wurde so entwickelt, dass damit mehrere Entwickler am gleichen Projekt arbeiten können. Wenn natürlich mehrere Entwickler an einem Projekt arbeiten, werden auch von mehreren die gleichen Dateien bearbeitet. Da jeder mit seiner lokalen Kopie arbeitet, stellt dies auch kein Problem dar. Werden aber nun die Änderungen von jedem Entwickler zurück gespielt, so haben die Dateien unterschiedliche stände. Haben alle Entwickler an unterschiedlichen Stellen einer Datei Änderungen durchgeführt, so führt der Server die Änderungen zusammen. Dieser Vorgang nennt sich mergen. Wurden die Dateien jedoch an gleicher Stelle geändert, so entsteht ein Konflikt, der Commit wird mit einer Fehlermeldung abgebrochen.
-Der Entwickler muss nun schauen, was die Unterschiede beider Versionen ist und diesen Konflikt beheben, es kann erforderlich sein, dass er sich mit dem anderen Entwickler in Verbindung setzt, der die Datei vor Ihm bearbeitet hat.
+Subversion wurde so entwickelt, dass damit mehrere Entwickler am gleichen Projekt arbeiten können. Wenn natürlich mehrere Entwickler an einem Projekt arbeiten, werden auch von mehreren die gleichen Dateien bearbeitet. Da jeder mit seiner lokalen Kopie arbeitet, stellt dies auch kein Problem dar. Werden aber nun die Änderungen von jedem Entwickler zurück gespielt, so haben die Dateien unterschiedliche Stände. Haben alle Entwickler an unterschiedlichen Stellen einer Datei Änderungen durchgeführt, so führt der Server die Änderungen zusammen. Dieser Vorgang nennt sich mergen. Wurden die Dateien jedoch an gleicher Stelle geändert, so entsteht ein Konflikt, der Commit wird mit einer Fehlermeldung abgebrochen.
+Der Entwickler muss nun schauen, was die Unterschiede beider Versionen ist und diesen Konflikt beheben, es kann erforderlich sein, dass er sich mit dem anderen Entwickler in Verbindung setzt, der die Datei vor Ihm bearbeitet hat. Wurde der Konflikt behoben, muss der Commit erneut durchgeführt werden um die Dateien im Repository zu aktualisieren.
+
+In bestimmten Fällen, kann es sein, dass Dateien nicht von mehreren Entwicklern verändert werden können. Bei Bilddateien ist dies zum Beispiel der Fall. Bei diesen Dateien gibt es keinen lesbaren Code, den das System auf Gleichheit direkt vergleichen kann bzw. entscheiden kann, ob er die Änderungen zusammenführen kann. Hier muss die ausgelagerte Datei vor der Veränderung gesperrt werden, so dass in dieser Zeit kein anderer die Datei verändern kann. Der Entwickler, der die Datei gesperrt hat, muss diese nach Bearbeitung aber wider freigeben, da er sonst die Arbeit anderer Entwickler blockieren kann.
+
+Werden Entwicklungsarbeiten durchgeführt, welche einer längeren Entwicklungszeit bedürfen, so empfiehlt es sich, dies in einem Branch im Repository, parallel zum eigentlichen Entwicklungszweig zu tun. Dadurch hat man die Möglichkeit, das andere die Fortschritte der Entwicklung testen können, diese aber nicht direkt in den Hauptentwicklungszweig integriert sind, für den Fall, dass sie Fehler oder Inkompatibilität erzeugen.
+Subversion an sich unterstützt die Entwicklung in mehreren Zweigen nicht. Für Subversion handelt es sich dabei eigentlich um eine Kopie des Trunk. Hierfür werden die Dateien nicht wirklich in ein neues Verzeichnis auf dem Server kopiert. Es werden im ersten Schritt nur Verknüpfungen zu den im Trunk befindlichen Dateien erzeugt und nur bei erfolgten Änderungen wird die Datei im neuen Verzeichnis erzeugt. Dieses Vorgehen spart Speicherplatz. Dies wird gerne als \textit{"billige Kopie"}\autocite[57]{VkmSVN} bezeichnet.
+
+Mit der Update Funktion sollte man seine Kopie, egal ob in einem Branch oder die lokale Working Copie, immer recht aktuell halten. So hat man immer einen Überblick darüber, ob Neuerungen anderer Entwickler die eigenen beeinflussen oder umgekehrt. Es kann sonst dazu führen, dass sich die Entwicklungen zu weit von einander weg entwickeln und dann wird das Zusammenführen schwierig, wenn es zu einer Vielzahl von Konflikten kommt.
+
+Es empfiehlt sich, immer wenn eine für den Kunden bestimmte Revision erzeugt wurde, diese zusätzlich mit einem Tag zu versehen. Dadurch wird dieser Entwicklungsstand noch einmal gesichert und man erhält die Möglichkeit diesem einen Namen zu geben, der nicht nur eine Revisionsnummer wie z. B. 3578 sondern Version 1.9 ist. Zusätzlich wird dann dieser Tag, ähnlich wie bei einem Branch, als Kopie im Repository gespeichert und ist so für spätere Zugriffe einfacher zu finden. Man kann diesen dann auch als Ausgangspunkt verwenden, wenn z.B. ein Fehler in der Software entdeckt wurde und für diese Auslieferungsversion ein passender Patch oder Release bereit gestellt werden soll.
+
+
+
+
+
+
+
+
 
 \subsection{Git}
+\subsubsection{Geschichtliches zu Git}
+Die Geburtsstunde von Git war im Jahre 2005 und ergab sich aus der Not heraus. Linus Torvalds, der Erfinder von Linux benötigte für die Entwicklung von Linux ein neues Versionierungssystem. Von 2002-2005 setzte man auf BitKeeper, welches eigentlich ein kommerzielles System ist, für die Entwicklung von Linux jedoch kostenfrei war. 2005 kam es aber zu Problemen, da ein Entwickler von BitKeeper die Linux Entwickler beschuldigte, dass sie durch Reverse Engineering versuchen würden die Mechanismen von BitKeeper offen legen wollen\autocite[11]{Git}. Daraufhin wurde die Erlaubnis BitKeeper kostenfrei nutzen zu dürfen widerrufen. 
+Auf dem Markt gabe es jedoch nichts, was den Ansprüchen von Linus Torvalds genügte und so beschloss er, dass eine Eigenentwicklung her musste. Für diese gab es einige Grundlegende Anforderungen\autocite[31]{PGit}:
+\begin{itemize}
+\itemsep-8pt
+\item Geschwindigkeit
+\item Einfaches Design
+\item Gute Unterstützung von nicht-linearer Entwicklung (tausende paralleler Branches, d.h. verschiedener Verzweigungen der Versionen)
+\item Vollständig verteilt
+\item Fähig, große Projekte wie den Linux Kernel effektiv zu verwalten (Geschwindigkeit und Datenumfang)
+\end{itemize}
+Es dauerte nur wenige Wochen, bis Git in der Lage war sich selbst zu verwalten. Bis Git jedoch nicht nur für die Entwickler selbst bedienbar war, dauerte es bis zum Februar 2007 und der Version 1.5. Das war auch der Zeitpunkt, ab dem sich Git sehr schnell verbreitete, was nicht zuletzt auch daran lag, das Linux von einer Community von über 1000 Entwicklern stetig weiter entwickelt wird. Wie Linux wird auch Git durch eine OpenSource Community kontinuierlich weiterentwickelt.
 
+\subsubsection{Aufbau von Git}

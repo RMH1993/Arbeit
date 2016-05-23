@@ -1969,19 +1969,22 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">OPSmCVS</bcf:citekey>
-    <bcf:citekey order="2">100minAM</bcf:citekey>
-    <bcf:citekey order="3">AMin.sieben.T</bcf:citekey>
-    <bcf:citekey order="4">AMin.sieben.T</bcf:citekey>
+    <bcf:citekey order="2">VkmSVN</bcf:citekey>
+    <bcf:citekey order="3">Git</bcf:citekey>
+    <bcf:citekey order="4">PGit</bcf:citekey>
     <bcf:citekey order="5">100minAM</bcf:citekey>
-    <bcf:citekey order="6">KPAvMdAM</bcf:citekey>
-    <bcf:citekey order="7">AM</bcf:citekey>
+    <bcf:citekey order="6">AMin.sieben.T</bcf:citekey>
+    <bcf:citekey order="7">AMin.sieben.T</bcf:citekey>
     <bcf:citekey order="8">100minAM</bcf:citekey>
-    <bcf:citekey order="9">AMin.sieben.T</bcf:citekey>
+    <bcf:citekey order="9">KPAvMdAM</bcf:citekey>
     <bcf:citekey order="10">AM</bcf:citekey>
     <bcf:citekey order="11">100minAM</bcf:citekey>
-    <bcf:citekey order="12">KPAvMdAM</bcf:citekey>
-    <bcf:citekey order="13">100minAM</bcf:citekey>
-    <bcf:citekey order="14">REuM</bcf:citekey>
+    <bcf:citekey order="12">AMin.sieben.T</bcf:citekey>
+    <bcf:citekey order="13">AM</bcf:citekey>
+    <bcf:citekey order="14">100minAM</bcf:citekey>
+    <bcf:citekey order="15">KPAvMdAM</bcf:citekey>
+    <bcf:citekey order="16">100minAM</bcf:citekey>
+    <bcf:citekey order="17">REuM</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty" type="entry" sortscheme="nty">
   <bcf:sorting>
